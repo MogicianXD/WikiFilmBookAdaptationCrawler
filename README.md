@@ -2,10 +2,6 @@
 
 ## Adaptation Relations
 
-> File 1 outputs `film_book.txt` in 'w'(write) mode, while file 2 and 3 output in 'a'(attach) mode. You can run them in order or change modes.
-
-> `/data/film_book.txt` is a previous output file. Codes is modified recently, so re-run may result in a different version.
-
 1. `list_film_book_en.py` for [Category:Lists of Films based on books](https://en.wikipedia.org/wiki/Category:Lists_of_films_based_on_books), which saves tabular records. 
 
 2. `tv_book_en.py` for [Category:Television shows based on books](https://en.wikipedia.org/wiki/Category:Television_shows_based_on_books).
@@ -18,7 +14,11 @@ But note that, in `film_book_en.py`, if a book name is not found, we use the cat
 
 It may raise noise, and you can change codes following the pattern `tv_book_en.py` to avoid. There's little difference in corresponding codes.  
 
-     
+
+> File 1 outputs `film_book.txt` in 'w'(write) mode, while file 2 and 3 output in 'a'(attach) mode. You can run them in order or change modes.
+
+> `/data/film_book.txt` is a previous output file. Codes are modified recently, so re-run may result in a different version.
+
 ## Categories
 
 Categories of a film or a book can be extracted after requesting [wiki metadata api]('https://en.wikipedia.org/api/rest_v1/page/metadata/'). 
@@ -38,6 +38,6 @@ You can also change codes commented out in match() and ceiling() for the rule of
 
 ## Apology
 
-Code is polished before push. For time reason, I haven't run them yet. Problems maybe exist.
+Codes were polished without check. For time reason, I haven't run them yet. Problems maybe exist.
 
 You can commit issues or contact [me](mogician233@outlook.com) whenever you need help.
